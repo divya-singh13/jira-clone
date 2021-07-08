@@ -1,0 +1,19 @@
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  flex-basis: 25%;
+}
+.col {
+  background-color: whitesmoke;
+  width: 24.5%;
+  text-align: center;
+}
+.heading {
+  background-color: lightgray;
+  padding: 1rem;
+}
+
+mat-card {
+  margin: 0.75rem;
+  cursor: pointer;
+}

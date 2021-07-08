@@ -1,0 +1,58 @@
+<mat-toolbar color="primary">
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with menu icon"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+  <span>JIRA</span>
+  <button mat-button [matMenuTriggerFor]="dashboard">
+    Dashboard<mat-icon matSuffix>expand_more</mat-icon>
+  </button>
+  <mat-menu #dashboard="matMenu">
+    <button mat-menu-item>User</button>
+    <button mat-menu-item>Cards</button>
+    <button mat-menu-item>About</button>
+  </mat-menu>
+  <button mat-button [matMenuTriggerFor]="projects">
+    Projects<mat-icon matSuffix>expand_more</mat-icon>
+  </button>
+  <mat-menu #projects="matMenu">
+    <button mat-menu-item>new</button>
+    <button mat-menu-item>old</button>
+  </mat-menu>
+
+  <button mat-button [matMenuTriggerFor]="issues">
+    Issues<mat-icon matSuffix>expand_more</mat-icon>
+  </button>
+  <mat-menu #issues="matMenu">
+    <button mat-menu-item>newIssue</button>
+    <button mat-menu-item>oldIssue</button>
+  </mat-menu>
+  <button mat-button [matMenuTriggerFor]="boards">
+    Boards<mat-icon matSuffix>expand_more</mat-icon>
+  </button>
+  <mat-menu #boards="matMenu">
+    <button mat-menu-item>newBoard</button>
+    <button mat-menu-item>oldBoard</button>
+  </mat-menu>
+  <button mat-raised-button>Create</button>
+  <span class="example-spacer"></span>
+
+  <input type="" placeholder="search" />
+  <mat-icon matSuffix>search</mat-icon>
+
+  <button
+    mat-icon-button
+    class="example-icon favorite-icon"
+    [matMenuTriggerFor]="user"
+  >
+    <mat-icon> person_pin</mat-icon>
+    <mat-menu #user="matMenu">
+      <button mat-menu-item>newUser</button>
+      <button mat-menu-item>oldUser</button>
+    </mat-menu>
+  </button>
+</mat-toolbar>
