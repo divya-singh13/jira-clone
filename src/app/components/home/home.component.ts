@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { StoryComponent } from '../story/story.component';
+import { StoryModalComponent } from '../story-modal/story-modal.component';
 
 export interface Tile {
   status: string;
@@ -93,7 +93,7 @@ export class HomeComponent implements OnInit {
   constructor(public dialog: MatDialog) {}
 
   openStoryDetails(index: number) {
-    const dialogRef = this.dialog.open(StoryComponent, {
+    const dialogRef = this.dialog.open(StoryModalComponent, {
       width: '250px',
       data: this.stories[index],
     });

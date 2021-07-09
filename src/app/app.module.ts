@@ -7,16 +7,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { MaterialModule } from './material/material.module';
-import { StoryComponent } from './components/story/story.component';
-
+import { StoryModalComponent } from './components/story-modal/story-modal.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    HomeComponent,
-    StoryComponent
-  ],
+  declarations: [AppComponent, HeaderComponent, HomeComponent, StoryModalComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -24,6 +18,6 @@ import { StoryComponent } from './components/story/story.component';
     MaterialModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

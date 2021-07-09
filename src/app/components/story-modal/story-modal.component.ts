@@ -4,10 +4,10 @@ import { Story } from '../home/home.component';
 
 @Component({
   selector: 'app-story',
-  templateUrl: './story.component.html',
-  styleUrls: ['./story.component.scss'],
+  templateUrl: './story-modal.component.html',
+  styleUrls: ['./story-modal.component.scss'],
 })
-export class StoryComponent implements OnInit {
+export class StoryModalComponent implements OnInit {
   storymap = new Map<string, string>();
   constructor(@Inject(MAT_DIALOG_DATA) public data: Story) {}
 
